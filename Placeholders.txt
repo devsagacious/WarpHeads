@@ -1,0 +1,6 @@
+%world% - world name
+%blockx%, %blocky%, %blockz% - coords in whole integers
+%x%, %y%, %z% - coords in doubles (for instance 2.03408420842084), bukkit will probably not like this but I don't honestly know
+%name% - warp name
+%cost% - warp cost
+%owner% - name of owner of warp
