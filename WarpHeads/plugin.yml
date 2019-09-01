@@ -1,0 +1,7 @@
+main: com.Sagacious_.WarpHeads.Core
+name: WarpHeads
+version: 1.0
+author: Sagacious_
+commands:
+  warp:
+   usage: /<command>

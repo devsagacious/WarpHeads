@@ -1,0 +1,92 @@
+#Requires Vault
+charge-create-warp: false
+to-charge: 250.0
+
+#Allow players to set prices to use their warp 
+allow-player-charging: false
+player-min-charge: 0.0
+player-max-charge: 2000.0
+
+
+
+
+#Maximum amount of warps a player can have 
+max-player-warps: 3
+
+# Set to 0 to disable
+tp-delay: 3
+# Set to 'none' to disable
+tp-sound: 'NOTE_PLING'
+
+
+
+### GUI ###
+###########
+title: '&bWarpHeads &8| &7Page %page%'
+
+#Like &7 but without the &
+name-color: 'b'
+#Placeholders: https://github.com/devsagacious/WarpHeads/blob/master/Placeholders.txt
+lore: 
+ - '&7Creator&8: &6%owner%'
+ - '&7Location&8: &6%world%, %blockx%, %blocky%, %blockz%'
+my-warps: '&6My Warps'
+previous: '&8< &6Previous page'
+next: '&6Next page &8>'
+
+my-warps-title: '&bWarpHeads &8| &7My Warps'
+all-warps: '&bAll Warps'
+
+cant-break-safe-block: 'You can not break the block beneath a warp!'
+
+
+#### Messages ####
+##################
+prefix: '&b&lWarpHeads &8| &r'
+no-permission: 'You do not have access to that command!'
+invalid-syntax: 'Invalid command syntax, use &4%args%&r!'
+invalid-number: 'Please specify a real number'
+teleportation-commencing: 'Teleportation commencing in &c3 seconds... &rDo not move!'
+teleportation-cancelled: 'You have moved, teleportation &4cancelled&r!'
+
+name-blacklisted: 'Please refrain from using such names'
+
+name-length-minimum: 3
+# You can set this to a maximum of 30
+name-length-maximum: 16
+
+name-blacklist: 
+  - 'shit'
+  - 'dick'
+  - 'fuck'
+  - 'cancer'
+
+## Create ##
+############
+cannot-create-warp-in-air: 'You can not create warps while being in the air!'
+max-warps-reached: 'You already have the maximum amount of warps!'
+insufficient-balance: 'You are &c%needed%$ &rshort, you have &c%balance%$ &rand you need 250$!'
+name-length: 'Warp names have a minimum of &c3 characters &rand a maximum of &c16 characters&r!'
+created-warp: 'Created warp named &4%name%&r costing &4%cost%&r!'
+too-expensive: 'You can not charge that much!'
+already-exists: 'A warp with that name already exists!'
+
+## Delete ##
+############
+unknown-warp: 'That warp has not been found!'
+not-owned: 'You do not own that warp!'
+deleted-warp: 'You have deleted your warp!'
+
+## Admin Delete ##
+##################
+admin-deleted-warp: 'You have deleted &4%player%&r his warp!'
+
+## Rename ##
+############
+renamed: 'You have renamed your warp to &4%name%&r!'
+
+## Use ##
+#########
+insufficient-balance-use: 'You need &4%balance% &rto use this warp!'
+warp-paid: 'You paid &4%balance% &rto teleport to &4%name%&r!'
+warp-free: 'You teleported to &4%name%&r!'
